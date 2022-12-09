@@ -1,0 +1,78 @@
+body > main > section:first-of-type{
+    
+    width: 100vw;
+    height: 80vh;
+}
+
+body > main > section:last-of-type{
+    
+    background-color: purple;
+    width: 100vw;
+    height: 20vh;
+}
+
+@keyframes bouncing-ball{
+    
+    10%{
+        transform: translateY(65vh);
+    }
+    
+    15%{
+        transform: translateY(70vh);
+        background-image: url("img/ball-2.svg");
+    }
+    
+    20%{
+        transform: translateY(75vh);
+        background-image: url("img/ball-3.svg");
+    }
+    
+    28%{
+        transform: translateY(20vh);
+    }
+    
+    36%{
+        transform: translateY(65vh);
+    }
+    
+    41%{
+        transform: translateY(70vh);
+        background-image: url("img/ball-2.svg");
+    }
+    
+    46%{
+        transform: translateY(75vh);
+        background-image: url("img/ball-3.svg");
+    }
+    
+    52%{
+        transform: translateY(40vh);
+    }
+    
+    58%{
+        transform: translateY(65vh);
+    }
+    
+    63%{
+        transform: translateY(70vh);
+        background-image: url("img/ball-2.svg");
+    }
+    
+    68%{
+        transform: translateY(75vh);
+        background-image: url("img/ball-3.svg");
+    }
+}
+
+body > main > section:first-of-type > div{
+    
+    transform-origin: 10vw 10vw;
+    background-image: url("img/ball-1.svg");
+    width: 20vh;
+    height: 20vh;
+    animation-name : bouncing-ball;
+    animation-delay: 1s;
+    animation-duration: 7s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
