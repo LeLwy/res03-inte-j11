@@ -134,4 +134,93 @@ figure {
     max-height:40%;
 }
 
+@keyframes fill-lvl-1 {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        fill: #7400b8;
+    }
+}
+
+@keyframes fill-lvl-2 {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        fill: #5e60ce;
+    }
+}
+
+@keyframes fill-lvl-3 {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        fill: #4ea8de;
+    }
+}
+
+@keyframes fill-lvl-4 {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        fill: #56cfe1;
+    }
+}
+
+@keyframes fill-lvl-5 {
+    from {
+        fill: rgba(255, 0, 0, 0);
+    }
+    to {
+        fill: #72efdd;
+    }
+}
+
+#eq1-1, #eq2-1, #eq3-1, #eq4-1{
+    animation-name : fill-lvl-1;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#eq1-2, #eq2-2, #eq3-2, #eq4-2{
+    animation-name : fill-lvl-2;
+    animation-delay: 2.25s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#eq1-3, #eq2-3, #eq3-3{
+    animation-name : fill-lvl-3;
+    animation-delay: 3.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#eq2-4, #eq3-4{
+    animation-name : fill-lvl-4;
+    animation-delay: 4.75s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#eq2-5{
+    animation-name : fill-lvl-5;
+    animation-delay: 6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
 /* EXERCICE 4 */
+
+#armor .st23 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
