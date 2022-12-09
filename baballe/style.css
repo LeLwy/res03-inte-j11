@@ -2,6 +2,7 @@ body > main > section:first-of-type{
     
     width: 100vw;
     height: 80vh;
+    background-color: grey;
 }
 
 body > main > section:last-of-type{
@@ -14,53 +15,81 @@ body > main > section:last-of-type{
 @keyframes bouncing-ball{
     
     10%{
-        transform: translateY(65vh);
+        transform: translateY(65vh) translateX(10vw);
     }
     
-    15%{
-        transform: translateY(70vh);
+    12%{
+        transform: translateY(70vh) translateX(10vw);
         background-image: url("img/ball-2.svg");
     }
     
-    20%{
-        transform: translateY(75vh);
+    16%{
+        transform: translateY(75vh) translateX(10vw);
         background-image: url("img/ball-3.svg");
     }
     
-    28%{
-        transform: translateY(20vh);
+    24%{
+        transform: translateY(20vh) translateX(20vw);
+    }
+    
+    32%{
+        transform: translateY(65vh) translateX(30vw);
+    }
+    
+    34%{
+        transform: translateY(70vh) translateX(30vw);
+        background-image: url("img/ball-2.svg");
     }
     
     36%{
-        transform: translateY(65vh);
+        transform: translateY(75vh) translateX(30vw);
+        background-image: url("img/ball-3.svg");
     }
     
-    41%{
-        transform: translateY(70vh);
+    38%{
+        transform: translateY(75vh) translateX(30vw);
         background-image: url("img/ball-2.svg");
     }
     
-    46%{
-        transform: translateY(75vh);
-        background-image: url("img/ball-3.svg");
+    44%{
+        transform: translateY(40vh) translateX(40vw);
+    }
+    
+    50%{
+        transform: translateY(65vh) translateX(50vw);
     }
     
     52%{
-        transform: translateY(40vh);
-    }
-    
-    58%{
-        transform: translateY(65vh);
-    }
-    
-    63%{
-        transform: translateY(70vh);
+        transform: translateY(70vh) translateX(50vw);
         background-image: url("img/ball-2.svg");
     }
     
-    68%{
-        transform: translateY(75vh);
+    54%{
+        transform: translateY(75vh) translateX(50vw);
         background-image: url("img/ball-3.svg");
+    }
+    
+    56%{
+        transform: translateY(75vh) translateX(50vw);
+        background-image: url("img/ball-2.svg");
+    }
+    
+    58%{
+        transform: translateY(75vh) translateX(60vw);
+        background-image: url("img/ball-1.svg");
+    }
+    
+    62%{
+        transform: translateY(75vh) translateX(65vw);
+        background-image: url("img/ball-1.svg");
+    }
+    
+    67%{
+        transform: translateY(75vh) translateX(70vw);
+    }
+    
+    100%{
+        transform: translateY(75vh) translateX(95vw);
     }
 }
 
@@ -71,8 +100,8 @@ body > main > section:first-of-type > div{
     width: 20vh;
     height: 20vh;
     animation-name : bouncing-ball;
-    animation-delay: 1s;
-    animation-duration: 7s;
-    animation-fill-mode: backwards;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 }
